@@ -1,0 +1,144 @@
+.menu {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+    position: fixed;
+  }
+}
+
+.mobile-menu__link {
+  display: block;
+  padding: 10px;
+  font-size: 40px;
+  line-height: 1.12em;
+  color: getColor(accent);
+  text-decoration: none;
+  border-bottom: 32px;
+}
+
+.mobile-menu__link:hover,
+.mobile-menu__link:active {
+  color: getColor(selected);
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: getColor(secondary);
+  right: 16px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  fill: getColor(accent);
+  position: absolute;
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+  border: none;
+
+  outline: none;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: getColor(selected);
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+    position: fixed;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  z-index: 999;
+  background-color: getColor(secondary);
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  justify-content: space-between;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: getColor(accent);
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.mobile-menu_tel {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2%;
+  text-align: left;
+}
+
+.Mobile-menu_contacts {
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.mobile-menu_mail {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 2%;
+  text-align: left;
+}
+
+.mobile-menu_socials {
+  flex-direction: row;
+  margin-top: 32px;
+  justify-content: flex-start;
+}
+
+.mobile-menu__footer {
+  font-size: 18px;
+  text-decoration: none;
+  color: getColor(selected);
+}
+
+.mobilie-menu__box {
+  border-right: 1px solid getColor(icons);
+  padding-right: 10px;
+  padding-left: 10px;
+  &:last-child {
+    border-right: 0px;
+  }
+}

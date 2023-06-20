@@ -1,0 +1,21 @@
+.contacts {
+  //padding-top: 5px; no movil//
+  display: none;
+
+  //movil//
+  &__item {
+    @extend .nav__item;
+    margin-right: 0;
+    margin-bottom: 0px;
+  }
+
+  .contacts__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    @extend .nav__link;
+    color: getColor(text);
+  }
+}

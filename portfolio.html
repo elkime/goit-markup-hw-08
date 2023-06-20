@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudio</title>
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop__modal">
+        <form name="contacts" class="form">
+          <h3 class="form__title">
+            Deje sus datos, nos contactaremos con usted
+          </h3>
+          <label class="form__label">
+            Nombre
+            <svg class="form__icon" width="18" height="25">
+              <use href="./images/icons.svg#icon-Human"></use>
+            </svg>
+            <input name="name" type="text" class="form__input" autofocus />
+          </label>
+          <label class="form__label">
+            Teléfono
+            <svg class="form__icon" width="25" height="25">
+              <use href="./images/icons.svg#icon-form-phone"></use>
+            </svg>
+            <input name="tel" type="tel" class="form__input" />
+          </label>
+          <label class="form__label">
+            E-mail
+            <svg class="form__icon" width="25" height="25">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+            <input name="mail" type="email" class="form__input" />
+          </label>
+          <label class="form__label">
+            Comentarios
+            <textarea
+              name="feedback"
+              rows="5"
+              placeholder="Introduzca el texto"
+              class="form__textarea"
+            ></textarea>
+          </label>
+          <label class="form__check">
+            <input type="checkbox" name="acept" class="form__custom-checkbox" />
+            <p>
+              Estoy de acuerdo con el boletín informativo y acepto los Términos
+              y Condiciones
+            </p>
+          </label>
+          <button type="submit" class="form__button">Enviar</button>
+        </form>
+        <a href="" class="form__close" data-modal-close>
+          <svg width="10" heiht="10">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="24" heiht="24">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div>
+        <ul class="mobile-menu">
+          <li><a href="index.html" class="mobile-menu__link">Estudio</a></li>
+          <li>
+            <a href="./portfolio.html" class="mobile-menu__link">Portafolio</a>
+          </li>
+          <li><a href="" class="mobile-menu__link">Contactos</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="list Mobile-menu_contacts">
+          <li class="mobile-menu_tel">
+            <a class="contacts__link" href="tel:+525555296000">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu_mail">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="list mobile-menu_socials">
+          <li class="mobilie-menu__box">
+            <a href="" class="mobile-menu__footer">Instagram</a>
+          </li>
+          <li class="mobilie-menu__box">
+            <a href="" class="mobile-menu__footer">Twitter</a>
+          </li>
+          <li class="mobilie-menu__box">
+            <a href="" class="mobile-menu__footer">Facebook</a>
+          </li>
+          <li class="mobilie-menu__box">
+            <a href="" class="mobile-menu__footer">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="header container">
+      <ul class="header__list">
+        <li>
+          <a href="" class="logo">Web<span class="studio">Studio</span></a>
+        </li>
+        <li>
+          <nav class="nav">
+            <ul class="list list--nogap">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html">Estudio</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__active" href="./portfolio.html"
+                  >Portafolio</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#footer">Contactos</a>
+              </li>
+            </ul>
+          </nav>
+        </li>
+        <li>
+          <ul class="list contacts">
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="header-svg" width="30px" height="12px">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+525555296000">
+                <svg width="30px" height="15px">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +52 55 5529 6000</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </header>
+    <main class="main">
+      <section class="section section--bottom section--top">
+        <ul class="list list-btn container">
+          <li class="btn">
+            <button type="button" class="button-portfolio">Todo</button>
+          </li>
+          <li class="btn">
+            <button type="button" class="button-portfolio">Sitios-web</button>
+          </li>
+          <li class="btn">
+            <button type="button" class="button-portfolio">Aplicaciones</button>
+          </li>
+          <li class="btn">
+            <button type="button" class="button-portfolio">Diseño</button>
+          </li>
+          <li class="btn">
+            <button type="button" class="button-portfolio">Marketing</button>
+          </li>
+        </ul>
+        <ul class="container grid">
+          <li class="card-portfolio">
+            <a href="" class="card-portfolio__link">
+              <div class="card-portfolio__img">
+                <img
+                  src="./images/tecnoduck.jpg"
+                  alt="Pagina Web de ejemplo"
+                  width="370px"
+                />
+                <div class="card-portfolio__superposition">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Totam sunt delectus eum minus, quia amet non fugiat,
+                    excepturi, ad similique accusamus! Sunt minus, dolores autem
+                    dolor
+                  </p>
+                </div>
+              </div>
+              <div class="card-portfolio__description">
+                <h3 class="card-portfolio__title">Tecnoduck</h3>
+                <p class="card-portfolio__text">Sitio-web</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-portfolio">
+            <a href="" class="card-portfolio__link">
+              <div class="card-portfolio__img">
+                <img
+                  src="./images/poster.jpg"
+                  alt="Poster del juego"
+                  width="370px"
+                />
+                <div class="card-portfolio__superposition">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Totam sunt delectus eum minus, quia amet non fugiat,
+                    excepturi, ad similique accusamus! Sunt minus, dolores autem
+                    dolor
+                  </p>
+                </div>
+              </div>
+              <div class="card-portfolio__description">
+                <h3 class="card-portfolio__title">
+                  Póster de Nueva Orleans vs Estrella Dorada
+                </h3>
+                <p class="card-portfolio__text">Diseño</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-portfolio">
+            <a href="" class="card-portfolio__link">
+              <div class="card-portfolio__img">
+                <img
+                  src="./images/seafood.jpg"
+                  alt="Pagina Web de ejemplo"
+                  width="370px"
+                />
+                <div class="card-portfolio__superposition">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Totam sunt delectus eum minus, quia amet non fugiat,
+                    excepturi, ad similique accusamus! Sunt minus, dolores autem
+                    dolor
+                  </p>
+                </div>
+              </div>
+              <div class="card-portfolio__description">
+                <h3 class="card-portfolio__title">Restaurante Seafood</h3>
+                <p class="card-portfolio__text">Aplicaciones</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-portfolio">
+            <a href="" class="card-portfolio__link">
+              <div class="card-portfolio__img">
+                <img
+                  src="./images/season.jpg"
+                  alt="Pagina Web de ejemplo"
+                  width="370px"
+                />
+                <div class="card-portfolio__superposition">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Totam sunt delectus eum minus, quia amet non fugiat,
+                    excepturi, ad similique accusamus! Sunt minus, dolores autem
+                    dolor
+                  </p>
+                </div>
+              </div>
+              <div class="card-portfolio__description">
+                <h3 class="card-portfolio__title">Proyecto Prime</h3>
+                <p class="card-portfolio__text">Marketing</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-portfolio">
+            <a href="" class="card-portfolio__link">
+              <div class="card-portfolio__img">
+                <img
+                  src="./images/box.jpg"
+                  alt="Pagina Web de ejemplo"
+                  width="370px"
+                />
+                <div class="card-portfolio__superposition">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Totam sunt delectus eum minus, quia amet non fugiat,
+                    excepturi, ad similique accusamus! Sunt minus, dolores autem
+                    dolor
+                  </p>
+                </div>
+              </div>
+              <div class="card-portfolio__description">
+                <h3 class="card-portfolio__title">Proyecto Cajas</h3>
+                <p class="card-portfolio__text">Aplicaciones</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-portfolio">
+            <a href="" class="card-portfolio__link">
+              <div class="card-portfolio__img">
+                <img
+                  src="./images/inspiration.jpg"
+                  alt="Pagina Web de ejemplo"
+                  width="370px"
+                />
+                <div class="card-portfolio__superposition">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Totam sunt delectus eum minus, quia amet non fugiat,
+                    excepturi, ad similique accusamus! Sunt minus, dolores autem
+                    dolor
+                  </p>
+                </div>
+              </div>
+              <div class="card-portfolio__description">
+                <h3 class="card-portfolio__title">
+                  La inspiración no tiene límites
+                </h3>
+                <p class="card-portfolio__text">Sitio-web</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-portfolio">
+            <a href="" class="card-portfolio__link">
+              <div class="card-portfolio__img">
+                <img
+                  src="./images/edition.jpg"
+                  alt="Pagina Web de ejemplo"
+                  width="370px"
+                />
+                <div class="card-portfolio__superposition">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Totam sunt delectus eum minus, quia amet non fugiat,
+                    excepturi, ad similique accusamus! Sunt minus, dolores autem
+                    dolor
+                  </p>
+                </div>
+              </div>
+              <div class="card-portfolio__description">
+                <h3 class="card-portfolio__title">Edición Limitada</h3>
+                <p class="card-portfolio__text">Diseño</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-portfolio">
+            <a href="" class="card-portfolio__link">
+              <div class="card-portfolio__img">
+                <img
+                  src="./images/proyect.jpg"
+                  alt="Pagina Web de ejemplo"
+                  width="370px"
+                />
+                <div class="card-portfolio__superposition">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Totam sunt delectus eum minus, quia amet non fugiat,
+                    excepturi, ad similique accusamus! Sunt minus, dolores autem
+                    dolor
+                  </p>
+                </div>
+              </div>
+              <div class="card-portfolio__description">
+                <h3 class="card-portfolio__title">Proyecto LAB</h3>
+                <p class="card-portfolio__text">Marketing</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-portfolio">
+            <a href="" class="card-portfolio__link">
+              <div class="card-portfolio__img">
+                <img
+                  src="./images/growing.jpg"
+                  alt="Pagina Web de ejemplo"
+                  width="370"
+                />
+                <div class="card-portfolio__superposition">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Totam sunt delectus eum minus, quia amet non fugiat,
+                    excepturi, ad similique accusamus! Sunt minus, dolores autem
+                    dolor
+                  </p>
+                </div>
+              </div>
+              <div class="card-portfolio__description">
+                <h3 class="card-portfolio__title">Negocio en Crecimiento</h3>
+                <p class="card-portfolio__text">Aplicaciones</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="container list list--between">
+        <li>
+          <div class="footer__logo">
+            <a href="" class="logo"
+              >Web<span class="footer__studio">Studio</span></a
+            >
+            <address class="footer__adress">
+              <p>
+                Caiz. Ticomán 500, Ciudad de <br />
+                México, CDMX, México
+              </p>
+
+              <a href="mailto:info@example.com" class="footer__link"
+                >info@example.com</a
+              >
+
+              <a href="tel:+525555296000" class="footer__link"
+                >+52 55 5529 6000</a
+              >
+            </address>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p class="footer__title">ENCUENTRENOS EN</p>
+            <ul class="list list--icons">
+              <li class="footer__social">
+                <a href="" class="footer__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social">
+                <a href="" class="footer__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social">
+                <a href="" class="footer__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social">
+                <a href="" class="footer__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-linkedin2"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <form name="Register" class="footer__form">
+            <label class="footer__label"
+              >SUSCRÍBASE AL BOLETÍN INFORMATIVO
+              <input
+                type="email"
+                name="email"
+                class="footer__email"
+                placeholder="Correo electrónico"
+              />
+            </label>
+            <button type="submit" class="footer__button">
+              Suscríbase
+              <svg width="24" height="24" class="footer__icon-send">
+                <use href="./images/icons.svg#icon-enviar-cono"></use>
+              </svg>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </footer>
+    <script src="./movile-menu.js"></script>
+  </body>
+</html>

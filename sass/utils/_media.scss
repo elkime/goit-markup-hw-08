@@ -1,0 +1,144 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .header {
+    padding-bottom: 0;
+    padding-top: 0px;
+  }
+  .header__list {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav {
+    display: flex;
+    padding-top: 50px;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .contacts {
+    display: block;
+  }
+
+  .banner {
+    background-image: url(../images/fondo.jpg);
+  }
+  .card-advantage {
+    width: 45%;
+  }
+
+  .card-advantage__title {
+    text-align: left;
+  }
+
+  .card-member {
+    width: 45%;
+  }
+
+  .card-client {
+    width: 30%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .card-client:nth-child(2n) {
+    margin-left: 0;
+  }
+  .list--between {
+    column-gap: 165px;
+    flex-wrap: wrap;
+  }
+
+  .list-btn {
+    justify-content: center;
+  }
+
+  .footer__email {
+    width: 450px;
+  }
+  .backdrop__modal {
+    width: 70%;
+    max-width: 528px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  .list {
+    flex-wrap: nowrap;
+  }
+
+  .section--top {
+    padding-top: 94px;
+  }
+  .section--bottom {
+    padding-bottom: 94px;
+  }
+  .contacts {
+    display: flex;
+    padding-top: 26px;
+  }
+
+  .banner {
+    padding-bottom: 200px;
+
+    &__title {
+      font-size: 44px;
+    }
+  }
+
+  .card-advantage {
+    width: 290px;
+  }
+
+  .section--hidden {
+    display: flex;
+  }
+
+  .list--between {
+    column-gap: 0;
+    justify-content: space-between;
+  }
+  .footer__adress,
+  .footer__title,
+  .footer__label {
+    text-align: left;
+  }
+
+  .footer__logo {
+    align-items: flex-start;
+  }
+  .footer__form {
+    flex-direction: row;
+  }
+
+  .footer__email {
+    width: 358px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .banner {
+    background-image: url(../images/fondo@x2.jpg);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .menu-container {
+    display: none;
+  }
+}

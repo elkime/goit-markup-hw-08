@@ -1,0 +1,27 @@
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: relative;
+
+  &__list {
+    flex-wrap: nowrap;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__menu {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  position: absolute;
+  justify-content: center;
+  right: 15px;
+  top: 16px;
+
+  &:hover,
+  &:focus {
+    fill: getColor(selected);
+  }
+}

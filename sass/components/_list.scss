@@ -1,0 +1,46 @@
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column; //movil//
+  justify-content: center;
+  align-items: center;
+  //movil//
+  gap: 30px;
+  flex-wrap: wrap;
+
+  &--between {
+    justify-content: center; //movil//
+    gap: 60px; //movil//
+    // justify-content: space-between;no movil//
+  }
+
+  &--icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+}
+
+.list-clients {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.list-btn {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 8px;
+  column-gap: 0;
+}
+
+.btn {
+  margin-left: 8px;
+  &:first {
+    margin-left: 0;
+  }
+}
+
+.list--nogap {
+  gap: 0;
+}
